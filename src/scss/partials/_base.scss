@@ -1,0 +1,40 @@
+html {
+  font-size: 125%; /** 20px **/
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $ff-primary;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 85%;
+}
+
+input,
+button {
+  font-family: inherit;
+  appearance: none;
+  background: transparent;
+  outline: none;
+}

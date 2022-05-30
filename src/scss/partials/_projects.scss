@@ -1,0 +1,127 @@
+.projects {
+  padding-block: 2rem;
+  position: relative;
+
+  @include breakpoint-down(lg) {
+    padding-block: 5rem;
+  }
+}
+
+.projects__info {
+  text-align: center;
+  @include breakpoint-up(lg) {
+    text-align: initial;
+    align-self: center;
+  }
+
+  &--title {
+    position: relative;
+    &::before {
+      @include breakpoint-up(lg) {
+        content: "";
+        position: absolute;
+        height: 75%;
+        width: 0.4%;
+        top: 12%;
+        left: 0;
+        background-color: $clr-grey-700;
+        border-radius: 4rem;
+      }
+    }
+
+    @include breakpoint-up(lg) {
+      padding-left: 0.9rem;
+    }
+  }
+
+  &--subtitle {
+    margin-inline: auto;
+    padding: 0.45rem 0 1.5rem;
+
+    @include breakpoint-up(lg) {
+      margin-inline: initial;
+      max-width: 18rem;
+      font-size: 2rem;
+    }
+  }
+
+  &--sub-info {
+    @include breakpoint-up(md) {
+      max-width: 25rem;
+      margin-inline: auto;
+    }
+
+    @include breakpoint-up(lg) {
+      margin-inline: initial;
+      padding: 0 0 2rem;
+      max-width: 18rem;
+      font-size: 0.8rem;
+      font-weight: $fw-500;
+    }
+  }
+}
+
+.projects__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint-up(lg) {
+    justify-content: initial;
+  }
+}
+
+//* Individual Project *//
+.project {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @include breakpoint-up(md) {
+    margin-bottom: 5rem;
+  }
+
+  @include breakpoint-up(lg) {
+    text-align: initial;
+    margin-bottom: 6rem;
+  }
+
+  &__info {
+    padding: 1.5rem;
+
+    &--subtitle {
+      font-size: 0.85rem;
+      color: $clr-primary-800;
+      font-weight: $fw-500;
+    }
+
+    &--title {
+      padding: 0.5rem 0 1rem;
+
+      @include breakpoint-up(lg) {
+        max-width: 18rem;
+      }
+    }
+
+    &--description {
+      font-size: 0.9rem;
+      font-weight: $fw-500;
+      color: rgba(0, 0, 0, 0.43);
+      max-width: 13rem;
+      margin-inline: auto;
+      padding-bottom: 2rem;
+
+      @include breakpoint-up(lg) {
+        margin-inline: initial;
+        max-width: 24rem;
+      }
+    }
+  }
+}
+
+.project2 picture {
+  order: 2;
+}
+
+.project2-description {
+  max-width: 17rem;
+}

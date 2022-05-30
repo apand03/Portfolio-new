@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Pacifico&display=swap"
+      rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="./dist/css/main.css">
+   <script src="./src/js/app.js" defer></script>
+   <title>Adhik Pandey</title>
+</head>
+
+<body>
+   <header class="header" id="header">
+      <div class="header__container">
+         <nav class="navbar flex flex__jcsb flex__aic">
+            <h1 class="header__logo">AP</h1>
+            <ul class="navbar__list">
+               <li class="navbar__list--items"><a href="#about" class="navbar__list--links">
+                     <\About>
+                  </a></li>
+               <li class="navbar__list--items"><a href="#projects" class="navbar__list--links">
+                     <\Work>
+                  </a></li>
+               <li class="navbar__list--items"><a href="#contact" class="navbar__list--links">
+                     <\Contact>
+                  </a></li>
+            </ul>
+            <div class="navbar__toggle">
+               <i class="fa-solid fa-ellipsis"></i>
+            </div>
+         </nav>
+      </div>
+   </header>
+   <main class="main">
+      <section class="hero">
+         <div class="container flex__md">
+            <article class="hero__info">
+               <h2 class="hero__info--title">Adhik Pandey</h2>
+               <p class="hero__info--metainfo">Aspiring UI Designer and Front End Web developer based in India.</p>
+               <a href="#projects" class="btn btn__cta">My Work</a>
+            </article>
+            <picture class="hero__image">
+               <source media="(min-width:1024px)" srcset="./img/Hero-Desktop.jpg">
+               <source media="(min-width:768px)" srcset="./img/Hero-Tablet.jpg">
+               <source media="(min-width:375px)" srcset="./img/Hero-Mobile.jpg">
+               <img src="./img/Hero-Desktop.jpg" alt="Flowers" style="width:auto;">
+            </picture>
+         </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about">
+         <div class="container flex__lg">
+            <article class="about__info">
+               <h3 class="title about__info--title">about me</h3>
+               <p class="sub-title about__info--subtitle">Better Design, Better Life</p>
+               <p class="sub-info about__info--sub-info">Hi, my name is Adhik. I am a visual person, that’s why I love
+                  designing aesthetically
+                  beautiful UI’s for my clients.</p>
+               <p class="sub-info about__info--sub-info">I love to solve design problems and find easy and better
+                  solutions to solve it.</p>
+               <a href="#skills" class="btn btn__cta btn__about">Learn More</a>
+            </article>
+            <article class="about__visual">
+               <div class="visuals grid grid__2-columns gap__20">
+                  <div class="visual">
+                     <i class="fa-solid fa-eye visual__icon"></i>
+                     <span class="visual__text">Visual Design</span>
+                  </div>
+                  <div class="visual">
+                     <i class="fa-solid fa-user-group visual__icon"></i>
+                     <span class="visual__text">User Research</span>
+                  </div>
+                  <div class="visual">
+                     <i class="fa-solid fa-user visual__icon"></i>
+                     <span class="visual__text">User Testing</span>
+                  </div>
+                  <div class="visual">
+                     <i class="fa-solid fa-chart-pie visual__icon"></i>
+                     <span class="visual__text">Micro Interactions</span>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="skills" id="skills">
+         <div class="container flex__lg">
+            <article class="skills__info">
+               <h3 class="title skills__info--title">my skills</h3>
+               <p class="sub-title skills__info--subtitle">Things I can do
+                  for you</p>
+               <p class="sub-info skills__info--sub-info">From providing a touch of
+                  responsiveness, to helping your
+                  designs look elegant, I can help
+                  bring your website to life.</p>
+               <a href="#projects" class="btn btn__cta btn__skills">Learn More</a>
+            </article>
+            <article class="skills__visual">
+               <div class="visuals grid grid__2-columns gap__20">
+                  <div class="visual">
+                     <i class="fa-brands fa-html5 visual__icon skills__icon"></i>
+                     <span class="visual__text">HTML5</span>
+                  </div>
+                  <div class="visual">
+                     <i class="fa-brands fa-css3-alt visual__icon skills__icon"></i>
+                     <span class="visual__text">CSS3</span>
+                  </div>
+                  <div class="visual">
+                     <i class="fa-brands fa-js-square visual__icon skills__icon"></i>
+                     <span class="visual__text">Javascript</span>
+                  </div>
+                  <div class="visual">
+                     <i class="fa-brands fa-sass visual__icon skills__icon"></i>
+                     <span class="visual__text">Sass</span>
+                  </div>
+               </div>
+            </article>
+         </div>
+      </section>
+      <section class="projects" id="projects">
+         <div class="container">
+            <article class="projects__info">
+               <h3 class="title projects__info--title">my projects</h3>
+               <p class="sub-title projects__info--subtitle">Latest Work</p>
+            </article>
+         </div>
+         <div class="container">
+            <article class="project flex__lg">
+               <picture class="projects__image">
+                  <source media="(min-width:1024px)" srcset="./img/Project1-Desktop.jpg">
+                  <source media="(min-width:768px)" srcset="./img/Project1-Tablet.jpg">
+                  <source media="(min-width:375px)" srcset="./img/Project1-Mobile.jpg">
+                  <img src="./img/Project1-Desktop.jpg" alt="Flowers" style="width:auto;">
+               </picture>
+               <div class="project__info">
+                  <span class="project__info--subtitle">Website</span>
+                  <h4 class="project__info--title">Grabers - A Food Delivery Website.</h4>
+                  <p class="project__info--description project2-description">A Food Delivery Website for foodies all
+                     around the world.</p>
+                  <a href="https://grabers.vercel.app/" target="_blank" class="btn btn__cta btn__preview">Live
+                     Preview</a>
+               </div>
+            </article>
+            <article class="project project2 flex__lg">
+               <picture class="projects__image">
+                  <source media="(min-width:1024px)" srcset="./img/Project2-Desktop.jpg">
+                  <source media="(min-width:768px)" srcset="./img/Project2-Tablet.jpg">
+                  <source media="(min-width:375px)" srcset="./img/Project2-Mobile.jpg">
+                  <img src="./img/Project2-Desktop.jpg" alt="Adventors">
+               </picture>
+               <div class="project__info">
+                  <span class="project__info--subtitle">Website</span>
+                  <h4 class="project__info--title">Adventors - Tours and Travel Website.</h4>
+                  <p class="project__info--description">A Tours and Travel Website for the cool gazed adventures out
+                     there.</p>
+                  <a href="" class="btn btn__cta btn__preview">Live Preview</a>
+               </div>
+            </article>
+         </div>
+      </section>
+      <!-- <section class="contact" id="contact"></section> -->
+   </main>
+   <!-- <footer class="footer"></footer>  -->
+</body>
+
+</html>

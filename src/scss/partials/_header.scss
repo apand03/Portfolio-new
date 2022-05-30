@@ -1,0 +1,49 @@
+// .header {
+//   position: fixed;
+//   top: 0;
+//   width: 100%;
+//   z-index: 999;
+// }
+
+.navbar__list {
+  display: none;
+
+  @include breakpoint-up(md) {
+    display: flex;
+    gap: 2rem;
+
+    &--links {
+      font-size: 0.85rem;
+      color: $clr-grey-500;
+      font-weight: $fw-500;
+      transition: color 0.2s ease-in-out;
+
+      &:hover,
+      &:focus {
+        color: $clr-grey-700;
+      }
+    }
+  }
+  @include breakpoint-up(lg) {
+    &--links {
+      font-size: 1rem;
+    }
+  }
+}
+
+.header {
+  &__logo {
+    font-family: $ff-secondary;
+    color: $clr-primary-900;
+    font-size: 1.8rem;
+  }
+}
+
+.navbar__toggle {
+  font-size: 1.8rem;
+  color: $clr-primary-800;
+
+  @include breakpoint-up(md) {
+    display: none;
+  }
+}
